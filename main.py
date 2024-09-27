@@ -32,8 +32,6 @@ class Directory :
     proj_data = Path(proj_data)
     p = proj_data
 
-    inp = p / 'inp'
-    out = p / 'out'
 
 
 DIR = Directory()
@@ -43,14 +41,11 @@ D = DIR
 class FilePath :
     d = Directory()
 
-    # from 14A20240924CSF_find_sibs_based_on_kinship
-    po_fs_ids = d.inp / 'po_fs_ids.txt'
-
     # file id on RAP: file-Fy3V3G8JkF6199F34yJ8K14F
     # /Bulk/Genotype Results/Genotype calls/ukb_sqc_v2.txt
-    ukb_sqc_v2 = d.inp / 'ukb_sqc_v2.txt'
+    ukb_sqc_v2 = '/ukb_sqc_v2.txt'
 
-    filtered_ids = d.out / 'filtered_ids.txt'
+    filtered_ids = d.p / 'filtered_ids.txt'
 
 
 FILE_PATH = FilePath()
