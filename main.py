@@ -157,15 +157,6 @@ def filter_sample_qc() :
     ##
 
 
-
-    ##
-
-
-
-
-    ##
-
-
 def main() :
     pass
 
@@ -173,7 +164,6 @@ def main() :
     filter_sample_qc()
 
     ##
-
 
 
 ##
